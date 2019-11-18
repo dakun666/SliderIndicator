@@ -1,6 +1,7 @@
 [English](README.md)
 
-[![License][https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg]][https://github.com/dakun666/SliderIndicator/blob/master/LICENSE]
+[licensesvg]: https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg
+[license]: https://github.com/dakun666/SliderIndicator/blob/master/LICENSE
 
 ## SliderIndicator 介绍 
 用于安卓ViewPager的indicator, 带有滑动和渐变动画，顺滑且轻量级
@@ -19,7 +20,7 @@ implementation 'cn.nightcoder:sliderindicator:1.0.0'
 ## 使用
 
 ```
-<com.nightcode.sliderIndicator.SliderIndicator
+<cn.nightcode.sliderIndicator.SliderIndicator
         android:id="@+id/slide_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +57,7 @@ shadowColor | 指示器阴影颜色
 shadowRadiusDimension | 指示器阴影长度
 
 ## License 
+[![License][licensesvg]][license]
 ```
 Copyright 2019 dakun(https://github.com/dakun666/SliderIndicator)
 

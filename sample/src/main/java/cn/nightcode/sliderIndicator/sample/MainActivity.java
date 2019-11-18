@@ -1,11 +1,11 @@
-package com.nightcode.sliderIndicator.sample;
+package cn.nightcode.sliderIndicator.sample;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-import com.nightcode.sliderIndicator.SliderIndicator;
+import cn.nightcode.sliderIndicator.SliderIndicator;
 
 public class MainActivity extends AppCompatActivity {
 

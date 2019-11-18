@@ -1,4 +1,6 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 29
@@ -27,4 +29,14 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
+}
+
+publish {
+    repoName = 'sliderIndicator'
+    userOrg = 'dakun'
+    groupId = 'cn.nightcoder'
+    artifactId = 'sliderindicator'
+    publishVersion = '1.0.0'
+    desc = 'Indicator for Android Viewpager, with slide and gradient animation, smooth and lightweight'
+    website = 'https://github.com/dakun666/SliderIndicator'
 }

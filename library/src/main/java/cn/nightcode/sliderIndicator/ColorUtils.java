@@ -1,4 +1,4 @@
-package com.nightcode.sliderIndicator;
+package cn.nightcode.sliderIndicator;
 
 import android.graphics.Color;
 

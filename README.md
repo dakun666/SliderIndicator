@@ -1,6 +1,7 @@
 [中文](README_CN.md)
 
-[![License][https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg]][https://github.com/dakun666/SliderIndicator/blob/master/LICENSE]
+[licensesvg]: https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg
+[license]: https://github.com/dakun666/SliderIndicator/blob/master/LICENSE
 
 ## Introduce
 Indicator for Android Viewpager, with slide and gradient animation, smooth and lightweight
@@ -19,7 +20,7 @@ implementation 'cn.nightcoder:sliderindicator:1.0.0'
 ## How to use
 
 ```
-<com.nightcode.sliderIndicator.SliderIndicator
+<cn.nightcode.sliderIndicator.SliderIndicator
         android:id="@+id/slide_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +57,7 @@ shadowColor | Indicators shadow color
 shadowRadiusDimension | Indicators shadow radius
 
 ## License 
+[![License][licensesvg]][license]
 ```
 Copyright 2019 dakun(https://github.com/dakun666/SliderIndicator)
 

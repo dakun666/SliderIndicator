@@ -14,7 +14,7 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <com.nightcode.sliderIndicator.SliderIndicator
+    <cn.nightcode.sliderIndicator.SliderIndicator
         android:id="@+id/main_slide_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

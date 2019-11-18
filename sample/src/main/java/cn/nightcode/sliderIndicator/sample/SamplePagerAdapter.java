@@ -1,4 +1,4 @@
-package com.nightcode.sliderIndicator.sample;
+package cn.nightcode.sliderIndicator.sample;
 
 import android.content.Context;
 import android.view.LayoutInflater;
