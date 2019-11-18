@@ -1,5 +1,7 @@
 [中文](README_CN.md)
 
+[![License][https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg]][https://github.com/dakun666/SliderIndicator/blob/master/LICENSE]
+
 ## Introduce
 Indicator for Android Viewpager, with slide and gradient animation, smooth and lightweight
 
@@ -53,7 +55,6 @@ isShadow | Is the Indicators shaded
 shadowColor | Indicators shadow color
 shadowRadiusDimension | Indicators shadow radius
 
-[![License][licensesvg]][license]
 ## License 
 ```
 Copyright 2019 dakun(https://github.com/dakun666/SliderIndicator)

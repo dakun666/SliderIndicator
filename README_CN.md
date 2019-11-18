@@ -1,6 +1,8 @@
 [English](README.md)
 
-## SliderIndicator 介绍
+[![License][https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg]][https://github.com/dakun666/SliderIndicator/blob/master/LICENSE]
+
+## SliderIndicator 介绍 
 用于安卓ViewPager的indicator, 带有滑动和渐变动画，顺滑且轻量级
 
 ## 效果
@@ -53,7 +55,6 @@ isShadow | 指示器是否需要阴影
 shadowColor | 指示器阴影颜色
 shadowRadiusDimension | 指示器阴影长度
 
-[![License][licensesvg]][license]
 ## License 
 ```
 Copyright 2019 dakun(https://github.com/dakun666/SliderIndicator)
