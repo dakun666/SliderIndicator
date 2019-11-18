@@ -3,13 +3,13 @@
     <declare-styleable name="SliderIndicator">
         <attr name="selectedIndicatorColor" format="color" />
         <attr name="unselectedIndicatorColor" format="color" />
-        <attr name="shadowColor" format="color" />
         <attr name="selectedWidthDimension" format="dimension" />
         <attr name="unselectedWidthDimension" format="dimension" />
         <attr name="diaDimension" format="dimension" />
         <attr name="spaceDimension" format="dimension" />
         <attr name="shadowRadiusDimension" format="dimension" />
         <attr name="isAnimation" format="boolean" />
+        <attr name="shadowColor" format="color" />
         <attr name="isShadow" format="boolean" />
     </declare-styleable>
 </resources>

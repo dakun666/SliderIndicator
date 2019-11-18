@@ -1,20 +1,20 @@
-[中文](README_CN.md)
+[English](README_en.md)
 
-## Introduce
-Indicator for Android Viewpager, with slide and gradient animation, smooth and lightweight
+## SliderIndicator 介绍
+用于安卓ViewPager的indicator, 带有滑动和渐变动画，顺滑且轻量级
 
-## Example
+## 效果
 
 <img src="demo.gif">
 
-## Dependency
+## 引入
 
 * Gradle 
 ```
 implementation 'cn.nightcoder:sliderindicator:1.0.0'
 ```
 
-## How to use
+## 使用
 
 ```
 <com.nightcode.sliderIndicator.SliderIndicator
@@ -36,19 +36,19 @@ implementation 'cn.nightcoder:sliderindicator:1.0.0'
 ```
 indicator.setupWithViewPager(viewPager);
 ```
-##### Note：setupWithViewPager() must be called after adapter determines the length.
+##### 注意：setupWithViewPager() 需要在adapter确定长度后调用
 
-## Parameters
+## 参数说明
 
-Parameter | Note
+参数 | 说明
   --- | ---
-selectedIndicatorColor | Selected indicator color
-unselectedIndicatorColor | Unselected indicators color
-selectedWidthDimension | Selected indicator width
-unselectedWidthDimension | Unselected indicators width
-diaDimension | Indicators height
-spaceDimension | Distance between indicators
-isAnimation | Need Animation
-isShadow | Is the Indicators shaded
-shadowColor | Indicators shadow color
-shadowRadiusDimension | Indicators shadow radius
+selectedIndicatorColor | 选中状态指示器颜色
+unselectedIndicatorColor | 未选中状态指示器颜色
+selectedWidthDimension | 选中状态指示器宽度
+unselectedWidthDimension | 未选中状态指示器宽度
+diaDimension | 指示器高度
+spaceDimension | 指示器之间的间距
+isAnimation | 是否设置动画效果
+isShadow | 指示器是否需要阴影
+shadowColor | 指示器阴影颜色
+shadowRadiusDimension | 指示器阴影长度
