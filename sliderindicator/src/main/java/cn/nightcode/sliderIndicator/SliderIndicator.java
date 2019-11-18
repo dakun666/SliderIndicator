@@ -190,6 +190,7 @@ public class SliderIndicator extends View {
 
         viewPager.removeOnPageChangeListener(pageChangeListener);
         viewPager.addOnPageChangeListener(pageChangeListener);
+        requestLayout();
     }
 
     private class OnViewPagerPageChangeListener implements ViewPager.OnPageChangeListener {
