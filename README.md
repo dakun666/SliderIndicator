@@ -14,7 +14,7 @@ Indicator for Android Viewpager, with slide and gradient animation, smooth and l
 
 * Gradle 
 ```
-implementation 'cn.nightcoder:sliderindicator:1.0.0'
+implementation 'cn.nightcoder:sliderindicator:1.0.1'
 ```
 
 ## How to use
