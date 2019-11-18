@@ -14,7 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 /**
  * Created by xuedakun on 2019-11-13 18:26
  *
- * @version : v1.0
+ * @version : v1.0.1
  * @project : SliderIndicator
  * @Email : dakun611@Gmail.com
  */
@@ -184,7 +184,7 @@ public class SliderIndicator extends View {
 
         itemCount = viewPager.getAdapter().getCount();
 
-        if(pageChangeListener == null) {
+        if (pageChangeListener == null) {
             pageChangeListener = new OnViewPagerPageChangeListener();
         }
 
