@@ -105,6 +105,12 @@ public class SliderIndicator extends View {
         }
     }
 
+    public void setSelectedIndicatorColor(int selectedIndicatorColor, int unselectedIndicatorColor) {
+        this.selectedIndicatorColor = selectedIndicatorColor;
+        this.unselectedIndicatorColor = unselectedIndicatorColor;
+        invalidate();
+    }
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int widthSpecMode = MeasureSpec.getMode(widthMeasureSpec);
