@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/main_view_pager"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <cn.nightcode.sliderIndicator.SliderIndicator
-        android:id="@+id/main_slide_indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        app:diaDimension="4dp"
-        app:isAnimation="true"
-        app:isShadow="false"
-        app:selectedIndicatorColor="#f57c00"
-        app:selectedWidthDimension="16dp"
-        app:spaceDimension="10dp"
-        app:unselectedIndicatorColor="#03a9f4"
-        app:unselectedWidthDimension="10dp" />
-</LinearLayout>
+        <cn.nightcode.sliderIndicator.sample.MeasureHeightViewPager
+            android:id="@+id/main_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <cn.nightcode.sliderIndicator.SliderIndicator
+            android:id="@+id/main_slide_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:diaDimension="4dp"
+            app:isAnimation="true"
+            app:isShadow="false"
+            app:selectedIndicatorColor="#f57c00"
+            app:selectedWidthDimension="16dp"
+            app:spaceDimension="10dp"
+            app:unselectedIndicatorColor="#03a9f4"
+            app:unselectedWidthDimension="10dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
