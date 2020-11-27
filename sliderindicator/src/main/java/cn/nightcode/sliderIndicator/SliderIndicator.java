@@ -10,6 +10,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 /**
  * Created by xuedakun on 2019-11-13 18:26
@@ -51,6 +52,7 @@ public class SliderIndicator extends View {
     private boolean isShadow = true;
 
     private OnViewPagerPageChangeListener pageChangeListener;
+    private ViewPager2.OnPageChangeCallback onPageChangeCallback;
 
 
     public SliderIndicator(Context context) {
@@ -202,6 +204,22 @@ public class SliderIndicator extends View {
         requestLayout();
     }
 
+    public void setupWithViewPager2(ViewPager2 viewPager2) {
+        if (viewPager2.getAdapter() == null) {
+            throw new IllegalArgumentException("viewPager2 adapter not be null");
+        }
+
+        itemCount = viewPager2.getAdapter().getItemCount();
+
+        if (onPageChangeCallback == null) {
+            onPageChangeCallback = new OnViewPageChangeCallback();
+        }
+
+        viewPager2.unregisterOnPageChangeCallback(onPageChangeCallback);
+        viewPager2.registerOnPageChangeCallback(onPageChangeCallback);
+        requestLayout();
+    }
+
     private class OnViewPagerPageChangeListener implements ViewPager.OnPageChangeListener {
 
         @Override
@@ -224,6 +242,25 @@ public class SliderIndicator extends View {
         @Override
         public void onPageScrollStateChanged(int state) {
 
+        }
+    }
+
+    private class OnViewPageChangeCallback extends ViewPager2.OnPageChangeCallback {
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            if (isAnimation) {
+                firstVisiblePosition = position;
+                lastPositionOffset = positionOffset;
+                invalidate();
+            }
+        }
+
+        @Override
+        public void onPageSelected(int position) {
+            if (!isAnimation) {
+                firstVisiblePosition = position;
+                invalidate();
+            }
         }
     }
 }

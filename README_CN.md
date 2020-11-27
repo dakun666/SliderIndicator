@@ -4,7 +4,7 @@
 [license]: https://github.com/dakun666/SliderIndicator/blob/master/LICENSE
 
 ## SliderIndicator 介绍 
-用于安卓ViewPager的indicator, 带有滑动和渐变动画，顺滑且轻量级
+用于安卓ViewPager或ViewPager2的indicator, 带有滑动和渐变动画，顺滑且轻量级
 
 ## 效果
 
@@ -38,8 +38,12 @@ implementation 'cn.nightcoder:sliderindicator:1.0.3'
 
 ```
 indicator.setupWithViewPager(viewPager);
+
+或
+
+indicator.setupWithViewPager2(viewPager2);
 ```
-##### 注意：setupWithViewPager() 需要在adapter确定长度后调用
+##### 注意：setupWithViewPager()及setupWithViewPager2() 需要在adapter确定长度后调用
 
 ## 参数说明
 

@@ -4,7 +4,7 @@
 [license]: https://github.com/dakun666/SliderIndicator/blob/master/LICENSE
 
 ## Introduce
-Indicator for Android Viewpager, with slide and gradient animation, smooth and lightweight
+Indicator for Android Viewpager and ViewPage2, with slide and gradient animation, smooth and lightweight
 
 ## Example
 

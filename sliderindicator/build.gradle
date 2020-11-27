@@ -6,7 +6,7 @@ def siteUrl = 'https://github.com/dakun666/SliderIndicator'
 def gitUrl = 'https://github.com/dakun666/SliderIndicator.git'
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
-version = "1.0.3"
+version = "1.0.4"
 group = "cn.nightcoder"
 
 android {
@@ -17,8 +17,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 4
-        versionName "1.0.3"
+        versionCode 5
+        versionName "1.0.4"
 
         consumerProguardFiles 'consumer-rules.pro'
     }
@@ -35,7 +35,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    compileOnly 'androidx.appcompat:appcompat:1.2.0'
+    compileOnly 'androidx.viewpager2:viewpager2:1.0.0'
 }
 
 bintray {
@@ -51,7 +52,7 @@ bintray {
         publish = true
         version {
             name = '1.0.3'
-            desc = 'Indicator for Android ViewPager, with slide and gradient animation, smooth and lightweight'
+            desc = 'Indicator for Android ViewPager and ViewPage2, with slide and gradient animation, smooth and lightweight'
             released  = new Date()
             vcsTag = 'v1.0.3'
             attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
@@ -65,7 +66,7 @@ install {
             project {
                 packaging 'aar'
                 name 'SliderIndicator'
-                description 'Indicator for Android ViewPager, with slide and gradient animation, smooth and lightweight'
+                description 'Indicator for Android ViewPager and ViewPage2, with slide and gradient animation, smooth and lightweight'
                 url siteUrl
                 licenses {
                     license {
