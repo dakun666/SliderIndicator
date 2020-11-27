@@ -14,7 +14,7 @@
 
 * Gradle 
 ```
-implementation 'cn.nightcoder:sliderindicator:1.0.3'
+implementation 'cn.nightcoder:sliderindicator:1.0.4'
 ```
 
 ## 使用
